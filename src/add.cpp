@@ -19,7 +19,7 @@ public:
     }
 };
 
-// 函数：打印测试结果
+// 印出測試结果
 void printResult(const vector<int>& nums, int target, const vector<int>& result, const string& testName) {
     cout << "測試: " << testName << endl;
     cout << "陣列: [";
@@ -30,10 +30,10 @@ void printResult(const vector<int>& nums, int target, const vector<int>& result,
     cout << "], 目標: " << target << endl;
     
     if (!result.empty()) {
-        cout << "結果: 找到索引 [" << result[0] << ", " << result[1] << "]"
+        cout << "找到索引 [" << result[0] << ", " << result[1] << "]"
              << " (值: " << nums[result[0]] << " + " << nums[result[1]] << " = " << target << ")" << endl;
     } else {
-        cout << "結果: 未找到解決方案" << endl;
+        cout << "未找到解決方案" << endl;
     }
     cout << "---" << endl;
 }
